@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card__heading {
+  text-transform: uppercase;
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgb(110, 18, 2);
+  border-radius: 5px;
+  padding: 0.6rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card__content {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1.2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__control {
+  padding: 0.4rem;
+  display: block;
+  width: 100%;
+  outline: 0;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: 2px solid #ddd;
+}
+
+.form__control:focus {
+  border-color: rgb(110, 18, 2);
+}
+
+.card__button {
+  padding: 0.6rem 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgba(110, 18, 2, 0.8);
+  color: whitesmoke;
+  border: none;
+  display: block;
+  margin: 2rem auto;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 3px;
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: rgba(110, 18, 2, 1);
+}
+
+.card__result {
+  margin: 3rem 0;
+  text-align: center;
+  display: none;
+}
+
+.card__result__heading {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.card__result__content {
+  font-size: 4rem;
+}
+
+.error-message {
+  color: tomato;
+  margin-top: 2rem;
+}
